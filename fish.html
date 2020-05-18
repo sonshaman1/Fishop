@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <script
+      src="https://kit.fontawesome.com/4900f7a293.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Fishop</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-main">
+        <div class="container">
+          <div class="logo-hd">
+            <a href="fish.html">
+              <i class="fas fa-fish"></i>
+              <h1>Fishop</h1>
+            </a>
+          </div>
+
+          <div class="search-hd">
+            <input class="inputSearch" type="text" placeholder="Fish" />
+            <i class="fas fa-search"></i>
+            <ul class="option-list"></ul>
+            <div class="search-hd-button">
+              <a href=""><h1>Search</h1></a>
+            </div>
+          </div>
+          <div class="cart-hd">
+            <a href="">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <ul class="cart-info">
+              <li>Chưa có sản phẩm nào</li>
+            </ul>
+          </div>
+
+          <div class="user-hd">
+            <a href="/fish-login.html">
+              <i class="far fa-user"></i>
+            </a>
+
+            <span class="infoUser">
+              <a id="infoUser" href="/fish-login.html">SignIn</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="header-category">
+        <div class="container">
+          <ul class="flex j-bt">
+            <li>
+              <a href="/fish-allStock.html"
+                >CÁ <i class="fas fa-caret-down"></i
+              ></a>
+              <ul class="dropdown typeFish"></ul>
+            </li>
+            <li>
+              <a href="fish-allStock.html"
+                >THỦY SINH <i class="fas fa-caret-down"></i
+              ></a>
+              <ul class="dropdown treeWater"></ul>
+            </li>
+
+            <li>
+              <a href="fish-allStock.html"
+                >THIẾT BỊ <i class="fas fa-caret-down"></i
+              ></a>
+              <ul class="dropdown device"></ul>
+            </li>
+            <li>
+              <a href="fish-allStock.html"
+                >THỨC ĂN <i class="fas fa-caret-down"></i
+              ></a>
+              <ul class="dropdown food"></ul>
+            </li>
+            <li>
+              <a href="fish-allStock.html"
+                >BỂ CÁ <i class="fas fa-caret-down"></i
+              ></a>
+              <ul class="dropdown tank"></ul>
+            </li>
+            <li>
+              <a href="">THANH LÝ <i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown oldStock"></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="banner">
+        <div class="container">
+          <div class="owl-carousel owl-theme sliderBanner">
+            <div class="slider">
+              <img src="/src/img/fish10.jpg" alt="" />
+            </div>
+            <div class="slider">
+              <img src="/src/img/fish8.jpg" alt="" />
+            </div>
+            <div class="slider">
+              <img src="/src/img/fish9.jpg" alt="" />
+            </div>
+            <div class="slider">
+              <img src="/src/img/fish5.jpg" alt="" />
+            </div>
+            <div class="slider">
+              <img src="/src/img/fish6.jpg" alt="" />
+            </div>
+            <div class="slider">
+              <img src="/src/img/fish7.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flashDeal">
+        <div class="container">
+          <div class="flashDeal-header">
+            <h2>
+              <i
+                style="color: tomato; padding-right: 10px;"
+                class="fas fa-fire-alt"
+              ></i
+              ><a href="">FLASH DEALS</a>
+            </h2>
+            <h4><a href="fish-allStock.html">All</a></h4>
+          </div>
+
+          <div class="flashDeal-content row"></div>
+        </div>
+      </div>
+      <div class="backgroundEndSheet">
+        <div class="container">
+          <div class="content">
+            <h2>Chỉ cần chọn thứ bạn thích</h2>
+            <h1>Còn lại cứ để chúng tôi !</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="bestSeller">
+        <div class="container">
+          <div class="bestSeller-header">
+            <h2>
+              <i
+                style="color: tomato; padding-right: 10px;"
+                class="fas fa-fire-alt"
+              ></i
+              ><a href="">BEST SELLER</a>
+            </h2>
+            <h4><a href="fish-allStock.html">All</a></h4>
+          </div>
+
+          <div class="bestSeller-content row"></div>
+        </div>
+      </div>
+      <div class="backgroundEndSheet2">
+        <div class="container">
+          <div class="content row">
+            <div class="item col-xl-3">
+              <i class="fas fa-shopping-cart"></i>
+              <h2>ĐẶT HÀNG, THANH TOÁN</h2>
+            </div>
+            <div class="item col-xl-3">
+              <i class="fas fa-shipping-fast"></i>
+              <h2>GIAO HÀNG TOÀN QUỐC</h2>
+            </div>
+            <div class="item col-xl-3">
+              <i class="fas fa-headphones-alt"></i>
+              <h2>TƯ VẤN SẢN PHẨM</h2>
+            </div>
+            <div class="item col-xl-3">
+              <i class="fas fa-dolly"></i>
+              <h2>ĐỔI TRẢ NHANH CHÓNG</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="newItems">
+        <div class="container">
+          <div class="newItems-header">
+            <h2>
+              <i
+                style="color: tomato; padding-right: 10px;"
+                class="fas fa-fire-alt"
+              ></i
+              ><a href="">NEW ITEMS</a>
+            </h2>
+            <h4><a href="fish-allStock.html">All</a></h4>
+          </div>
+          <div class="newItems-content">
+            <div class="owl-carousel owl-theme sliderNewItems">
+              <div class="slider">
+                <div class="item-bd">
+                  <a href="fish-stock.html">
+                    <img src="src/img/fish2.jpg" alt="" />
+                  </a>
+                  <div class="info">
+                    <h2><a href="">Fish Name</a></h2>
+                    <h2>$19.99</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="slider">
+                <div class="item-bd">
+                  <a href="fish-stock.html">
+                    <img src="src/img/fish3.jpg" alt="" />
+                  </a>
+                  <div class="info">
+                    <h2><a href="">Fish Name</a></h2>
+                    <h2>$19.99</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="slider">
+                <div class="item-bd">
+                  <a href="fish-stock.html">
+                    <img src="src/img/fish4.jpg" alt="" />
+                  </a>
+                  <div class="info">
+                    <h2><a href="">Fish Name</a></h2>
+                    <h2>$19.99</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="slider">
+                <div class="item-bd">
+                  <a href="fish-stock.html">
+                    <img src="src/img/fish5.jpg" alt="" />
+                  </a>
+                  <div class="info">
+                    <h2><a href="">Fish Name</a></h2>
+                    <h2>$19.99</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="slider">
+                <div class="item-bd">
+                  <a href="fish-stock.html">
+                    <img src="src/img/fish6.jpg" alt="" />
+                  </a>
+                  <div class="info">
+                    <h2><a href="">Fish Name</a></h2>
+                    <h2>$19.99</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="slider">
+                <div class="item-bd">
+                  <a href="fish-stock.html">
+                    <img src="src/img/fish7.jpg" alt="" />
+                  </a>
+                  <div class="info">
+                    <h2><a href="">Fish Name</a></h2>
+                    <h2>$19.99</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="slider">
+                <div class="item-bd">
+                  <a href="fish-stock.html">
+                    <img src="src/img/fish8.jpg" alt="" />
+                  </a>
+                  <div class="info">
+                    <h2><a href="">Fish Name</a></h2>
+                    <h2>$19.99</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="otherItem">
+        <div class="container">
+          <div class="oI-header">
+            <h2>
+              <i
+                style="color: tomato; padding-right: 10px;"
+                class="fas fa-fire-alt"
+              ></i
+              ><a href="">OTHER ITEMS</a>
+            </h2>
+            <h4><a href="">All</a></h4>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-item1 row">
+          <div class="contact col-xs-12 col-md-6">
+            <div class="content col-xs-6">
+              <h2>Producer</h2>
+              <p>Nguyen Hong Son</p>
+            </div>
+            <div class="content col-xs-6">
+              <h2>Gmail</h2>
+              <a id="gmail" href="">nguyenhongson060297</a>
+            </div>
+          </div>
+          <div class="contact col-xs-12 col-md-6">
+            <div class="content col-xs-6">
+              <h2>Phone</h2>
+              <a href="">0388986297</a>
+            </div>
+            <div class="content col-xs-6">
+              <h2>Fax</h2>
+              <a href="">+ 000 1111 0000</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-item2 row">
+          <div class="item-child col-xs-12 col-md-4">
+            <a href=""
+              ><i
+                class="fab fa-facebook-square"
+                style="color: #3b5998; padding-right: 10px;"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                class="fab fa-instagram"
+                style="color: #e1306c; padding-right: 10px;"
+              ></i
+            ></a>
+            <a href=""
+              ><i class="fab fa-twitter-square" style="color: #1da1f2;"></i
+            ></a>
+          </div>
+          <div class="item-child col-xs-12 col-md-4">
+            <a
+              href=""
+              style="
+                color: rgb(160, 160, 160);
+                font-size: 15px;
+                padding-right: 10px;
+              "
+              >Privacy policy</a
+            >
+            <a href="" style="color: rgb(160, 160, 160); font-size: 15px;"
+              >Term of service</a
+            >
+          </div>
+          <div class="item-child col-xs-12 col-md-4">
+            <p>
+              © 2020 Fishop. All rights reserved | Designed by Son Nguyen
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="scroll" href=""><i class="fa fa-eject"></i></a>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="dist/js/fish.min.js"></script>
+</html>

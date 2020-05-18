@@ -1,0 +1,180 @@
+.mainAllStock {
+  .container {
+    padding: 100px 0px;
+    display: flex;
+    @include rs-xs {
+      padding: 10px 0px;
+      display: flex;
+    }
+    @include rs-xl {
+      padding: 100px 0px;
+    }
+    .toolFilter {
+      ul {
+        li {
+          font-weight: bolder;
+          font-size: 15px;
+          padding: 10px 0px;
+          width: 100%;
+          transition: all 0.5s ease-out;
+          @include rs-xs {
+            font-size: 8px;
+            padding: 0;
+          }
+          @include rs-md {
+            font-size: 13px;
+            padding: 5px 5px 0px;
+          }
+          @include rs-xl {
+            font-size: 15px;
+            padding: 10px 0px;
+          }
+          a {
+            padding: 10px;
+            width: 100%;
+            color: rgba(225, 99, 71, 0.8);
+            @include rs-xs {
+              padding: 0;
+            }
+            @include rs-md {
+              padding: 10px;
+            }
+            @include rs-xl {
+              padding: 10px;
+            }
+          }
+          &:hover {
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3),
+              0 10px 30px 0 rgba(0, 0, 0, 0.2);
+            color: $maincolor;
+          }
+          .active {
+            color: $maincolor;
+          }
+        }
+      }
+    }
+    .allStock {
+      &-content {
+        &-item {
+          padding: 10px;
+          @include rs-xs {
+            padding: 1px;
+          }
+          @include rs-md {
+            padding: 5px;
+          }
+          @include rs-xl {
+            padding: 10px;
+          }
+          &-bd {
+            border-radius: 10px;
+            height: 350px;
+            padding: 10px;
+            transition: all 0.5s ease-out;
+            @include rs-xs {
+              height: 60px;
+              padding: 1px;
+            }
+            @include rs-sm {
+              height: 90px;
+            }
+            @include rs-md {
+              height: 120px;
+            }
+            @include rs-xl {
+              height: 255px;
+              padding: 10px;
+            }
+            &:hover {
+              cursor: pointer;
+              box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.4),
+                0 10px 30px 0 rgba(0, 0, 0, 0.3);
+            }
+            img {
+              width: 100%;
+              overflow: hidden;
+              height: 200px;
+              border-radius: 5px;
+              @include rs-xs {
+                height: 40px;
+              }
+              @include rs-sm {
+                height: 67px;
+              }
+              @include rs-md {
+                height: 90px;
+              }
+              @include rs-xl {
+                height: 192px;
+              }
+            }
+            position: relative;
+            span {
+              display: none;
+              position: absolute;
+              z-index: 10;
+              top: -10px;
+              right: -10px;
+              border: 2px solid rgba(255, 205, 205, 0.747);
+              background-color: $backgroundColor;
+              border-radius: 15px 0px;
+              color: tomato;
+              padding: 2px 8px;
+              font-family: "Open Sans", sans-serif;
+              font-size: 15px;
+              font-weight: 900;
+            }
+
+            .infoStockOfAllStock {
+              align-items: center;
+              display: flex;
+              padding-top: 10px;
+              justify-content: space-between;
+              @include rs-xs {
+                padding-top: 1px;
+                height: 10px;
+              }
+              @include rs-md {
+                height: 20px;
+              }
+              @include rs-xl {
+                padding-top: 5px;
+                height: auto;
+              }
+              p {
+                text-align: center;
+                font-size: 15px;
+                padding-bottom: 10px;
+                font-weight: bold;
+                color: rgba(114, 114, 114, 0.8);
+                @include rs-xs {
+                  font-size: 5px;
+                }
+                @include rs-sm {
+                  font-size: 10px;
+                }
+                @include rs-md {
+                  font-size: 10px;
+                  padding-right: 2px;
+                }
+                @include rs-xl {
+                  font-size: 20px;
+                  padding-bottom: 10px;
+                }
+                a {
+                  color: rgba(114, 114, 114, 0.8);
+                  transition: all 0.5s ease-out;
+                  font-family: "Open Sans", sans-serif;
+                  &:hover {
+                    color: $maincolor;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
